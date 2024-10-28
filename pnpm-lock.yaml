@@ -15,8 +15,8 @@ importers:
         specifier: ^4.16.7
         version: 4.16.7(rollup@3.29.4)(typescript@5.2.2)
       astro-font:
-        specifier: ^0.0.72
-        version: 0.0.72
+        specifier: ^0.1.81
+        version: 0.1.81
       pnpm:
         specifier: ^9.12.3
         version: 9.12.3
@@ -89,7 +89,7 @@ importers:
         version: 3.3.5
       tinacms:
         specifier: ^2.1.1
-        version: 2.3.0(@types/react@18.2.31)(abstract-level@1.0.4)(encoding@0.1.13)(immer@10.1.1)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(scheduler@0.19.0)(sucrase@3.34.0)(typescript@5.2.2)
+        version: 2.3.0(@types/react@18.2.31)(abstract-level@1.0.3)(encoding@0.1.13)(immer@10.1.1)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(scheduler@0.19.0)(sucrase@3.34.0)(typescript@5.2.2)
       typescript:
         specifier: ^5.2.2
         version: 5.2.2
@@ -1102,6 +1102,7 @@ packages:
   '@humanwhocodes/config-array@0.11.13':
     resolution: {integrity: sha512-JSBDMiDKSzQVngfRjOdFXgFfklaXI4K9nLF49Auh21lmBWRLIK3+xTErTWD4KU54pb6coM6ESE7Awz/FNU3zgQ==}
     engines: {node: '>=10.10.0'}
+    deprecated: Use @eslint/config-array instead
 
   '@humanwhocodes/module-importer@1.0.1':
     resolution: {integrity: sha512-bxveV4V8v5Yb4ncFTT3rPSgZBOpCkjfK0y4oVVVJwIuDVBRMDXrPyXRL988i5ap9m9bnyEEjWfm5WkBmtffLfA==}
@@ -1109,6 +1110,7 @@ packages:
 
   '@humanwhocodes/object-schema@2.0.1':
     resolution: {integrity: sha512-dvuCeX5fC9dXgJn9t+X5atfmgQAzUOWqS1254Gh0m6i8wKd10ebXkfNKiRK+1GWi/yTvvLDHpoxLr0xxxeslWw==}
+    deprecated: Use @eslint/object-schema instead
 
   '@iarna/toml@2.2.5':
     resolution: {integrity: sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==}
@@ -1320,6 +1322,7 @@ packages:
 
   '@motionone/vue@10.16.4':
     resolution: {integrity: sha512-z10PF9JV6SbjFq+/rYabM+8CVlMokgl8RFGvieSGNTmrkQanfHn+15XBrhG3BgUfvmTeSeyShfOHpG0i9zEdcg==}
+    deprecated: Motion One for Vue is deprecated. Use Oku Motion instead https://oku-ui.com/motion
 
   '@n1ru4l/push-pull-async-iterable-iterator@3.2.0':
     resolution: {integrity: sha512-3fkKj25kEjsfObL6IlKPAlHYPq/oYwUkkQ03zsTTiDjD7vg/RxjdiLeCydqtxHZP0JgsXL3D/X5oAkMGzuUp/Q==}
@@ -3713,8 +3716,8 @@ packages:
     resolution: {integrity: sha512-k9ASvY8pa6qttM+fvNJCILxxjftfNg/ou5cjd25SVHsc7moplezGGM9fgMUyf24SRYt8ShO603oHRDn2KqwxMg==}
     engines: {node: ^14.18.0 || >=16.0.0}
 
-  astro-font@0.0.72:
-    resolution: {integrity: sha512-FUjIerovSg2lsfJfvvqY23hgvc++gHi69ikFkxm0mqO3MPFykK5ppeUuROUjhNbE6vwdD8MpiJOy1CR5S0g/lQ==}
+  astro-font@0.1.81:
+    resolution: {integrity: sha512-rbrv/+ZSYdgyjBlhkAqfCjMxqqo6iEwnSo/rAdDt/POILsF0ChxMFhefIIzKEukrRGtVjEj1lrLRYk+AdV9scQ==}
 
   astro@4.16.7:
     resolution: {integrity: sha512-nON+8MUEkWTFwXbS4zsQIq4t0Fs42eulM4x236AL+qNnWfqNAOOqAnFxO1dxfJ1q+XopIBbbT9Mtev+0zH47PQ==}
@@ -4506,10 +4509,6 @@ packages:
     peerDependencies:
       react: '>=16.12.0'
 
-  dset@3.1.3:
-    resolution: {integrity: sha512-20TuZZHCEZ2O71q9/+8BwKwZ0QtD9D8ObhrihJPr+vLLYlSuAU3/zL4cSlgbfeoGHTjCSJBa7NGcrF9/Bx/WJQ==}
-    engines: {node: '>=4'}
-
   dset@3.1.4:
     resolution: {integrity: sha512-2QF/g9/zTaPDc3BjNcVTGoBbXBgYfMTTceLaYcFJ/W9kggFUkhxD/hMEeuLKbugyef9SqAx8cpgwlIP/jinUTA==}
     engines: {node: '>=4'}
@@ -4645,6 +4644,7 @@ packages:
   eslint@8.56.0:
     resolution: {integrity: sha512-Go19xM6T9puCOWntie1/P997aXxFsOi37JIHRWI514Hc6ZnaHGKY9xFhrU65RT6CcBEzZoGG1e6Nq+DT04ZtZQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
 
   espree@9.6.1:
@@ -7211,6 +7211,7 @@ packages:
 
   rimraf@3.0.2:
     resolution: {integrity: sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==}
+    deprecated: Rimraf versions prior to v4 are no longer supported
     hasBin: true
 
   robust-predicates@3.0.2:
@@ -7371,6 +7372,7 @@ packages:
 
   shikiji@0.6.13:
     resolution: {integrity: sha512-4T7X39csvhT0p7GDnq9vysWddf2b6BeioiN3Ymhnt3xcy9tXmDcnsEFVxX18Z4YcQgEE/w48dLJ4pPPUcG9KkA==}
+    deprecated: Shikiji is merged back to Shiki v1.0, please migrate over to get the latest updates
 
   side-channel@1.0.4:
     resolution: {integrity: sha512-q5XPytqFEIKHkGdiMIrY10mvLRvnQh42/+GoBlFW3b2LXLE2xxJpZFdm94we0BaoV3RwJyGqg5wS7epxTv0Zvw==}
@@ -9488,7 +9490,7 @@ snapshots:
   '@graphql-tools/utils@10.0.7(graphql@15.8.0)':
     dependencies:
       '@graphql-typed-document-node/core': 3.2.0(graphql@15.8.0)
-      dset: 3.1.3
+      dset: 3.1.4
       graphql: 15.8.0
       tslib: 2.6.2
 
@@ -11179,12 +11181,12 @@ snapshots:
       - supports-color
       - yup
 
-  '@tinacms/search@1.0.33(abstract-level@1.0.4)(react@17.0.2)(sucrase@3.34.0)(typescript@5.2.2)(yup@1.4.0)':
+  '@tinacms/search@1.0.33(abstract-level@1.0.3)(react@17.0.2)(sucrase@3.34.0)(typescript@5.2.2)(yup@1.4.0)':
     dependencies:
       '@tinacms/graphql': 1.5.6(react@17.0.2)(typescript@5.2.2)
       '@tinacms/schema-tools': 1.6.6(react@17.0.2)(yup@1.4.0)
       memory-level: 1.0.0
-      search-index: 4.0.0(abstract-level@1.0.4)
+      search-index: 4.0.0(abstract-level@1.0.3)
       sqlite-level: 1.2.0(sucrase@3.34.0)
       stopword: 3.1.1
     transitivePeerDependencies:
@@ -13406,7 +13408,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  astro-font@0.0.72: {}
+  astro-font@0.1.81: {}
 
   astro@4.16.7(rollup@3.29.4)(typescript@5.2.2):
     dependencies:
@@ -14329,8 +14331,6 @@ snapshots:
       react-is: 17.0.2
       tslib: 2.6.2
 
-  dset@3.1.3: {}
-
   dset@3.1.4: {}
 
   ee-first@1.1.1: {}
@@ -14801,16 +14801,6 @@ snapshots:
       browser-level: 1.0.1
       charwise: 3.0.1
       level-read-stream: 1.1.0(abstract-level@1.0.3)
-      memory-level: 1.0.0
-      traverse: 0.6.7
-    transitivePeerDependencies:
-      - abstract-level
-
-  fergies-inverted-index@12.0.0(abstract-level@1.0.4):
-    dependencies:
-      browser-level: 1.0.1
-      charwise: 3.0.1
-      level-read-stream: 1.1.0(abstract-level@1.0.4)
       memory-level: 1.0.0
       traverse: 0.6.7
     transitivePeerDependencies:
@@ -15731,12 +15721,6 @@ snapshots:
       readable-stream: 3.6.2
     optionalDependencies:
       abstract-level: 1.0.3
-
-  level-read-stream@1.1.0(abstract-level@1.0.4):
-    dependencies:
-      readable-stream: 3.6.2
-    optionalDependencies:
-      abstract-level: 1.0.4
 
   level-supports@2.1.0: {}
 
@@ -18129,20 +18113,6 @@ snapshots:
     transitivePeerDependencies:
       - abstract-level
 
-  search-index@4.0.0(abstract-level@1.0.4):
-    dependencies:
-      browser-level: 1.0.1
-      charwise: 3.0.1
-      fergies-inverted-index: 12.0.0(abstract-level@1.0.4)
-      level-read-stream: 1.1.0(abstract-level@1.0.4)
-      lru-cache: 10.0.0
-      memory-level: 1.0.0
-      ngraminator: 3.0.2
-      p-queue: 7.3.4
-      term-vector: 1.0.0
-    transitivePeerDependencies:
-      - abstract-level
-
   section-matter@1.0.0:
     dependencies:
       extend-shallow: 2.0.1
@@ -18690,7 +18660,7 @@ snapshots:
       - react-native
       - supports-color
 
-  tinacms@2.3.0(@types/react@18.2.31)(abstract-level@1.0.4)(encoding@0.1.13)(immer@10.1.1)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(scheduler@0.19.0)(sucrase@3.34.0)(typescript@5.2.2):
+  tinacms@2.3.0(@types/react@18.2.31)(abstract-level@1.0.3)(encoding@0.1.13)(immer@10.1.1)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(scheduler@0.19.0)(sucrase@3.34.0)(typescript@5.2.2):
     dependencies:
       '@ariakit/react': 0.4.13(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
       '@floating-ui/dom': 1.6.11
@@ -18710,7 +18680,7 @@ snapshots:
       '@react-hook/window-size': 3.1.1(react@17.0.2)
       '@tinacms/mdx': 1.5.0(react@17.0.2)(typescript@5.2.2)(yup@1.4.0)
       '@tinacms/schema-tools': 1.6.6(react@17.0.2)(yup@1.4.0)
-      '@tinacms/search': 1.0.33(abstract-level@1.0.4)(react@17.0.2)(sucrase@3.34.0)(typescript@5.2.2)(yup@1.4.0)
+      '@tinacms/search': 1.0.33(abstract-level@1.0.3)(react@17.0.2)(sucrase@3.34.0)(typescript@5.2.2)(yup@1.4.0)
       '@udecode/cn': 33.0.0(@types/react@18.2.31)(class-variance-authority@0.7.0)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(tailwind-merge@2.5.4)
       '@udecode/plate': 36.5.9(@types/react@18.2.31)(immer@10.1.1)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(scheduler@0.19.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.107.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(slate@0.103.0))(slate@0.103.0)
       '@udecode/plate-autoformat': 36.5.6(@udecode/plate-common@36.5.9(@types/react@18.2.31)(immer@10.1.1)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(scheduler@0.19.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.107.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(slate@0.103.0))(slate@0.103.0))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.107.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(slate@0.103.0))(slate@0.103.0)
