@@ -54,9 +54,6 @@ importers:
       eslint-plugin-jsx-a11y:
         specifier: ^6.8.0
         version: 6.8.0(eslint@8.56.0)
-      husky:
-        specifier: ^8.0.3
-        version: 8.0.3
       lint-staged:
         specifier: ^15.2.0
         version: 15.2.0
@@ -92,7 +89,7 @@ importers:
         version: 3.3.5
       tinacms:
         specifier: ^2.1.1
-        version: 2.3.0(@types/react@18.2.31)(abstract-level@1.0.3)(encoding@0.1.13)(immer@10.1.1)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(scheduler@0.19.0)(sucrase@3.34.0)(typescript@5.2.2)
+        version: 2.3.0(@types/react@18.2.31)(abstract-level@1.0.4)(encoding@0.1.13)(immer@10.1.1)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(scheduler@0.19.0)(sucrase@3.34.0)(typescript@5.2.2)
       typescript:
         specifier: ^5.2.2
         version: 5.2.2
@@ -5142,11 +5139,6 @@ packages:
   human-signals@5.0.0:
     resolution: {integrity: sha512-AXcZb6vzzrFAUE61HnN4mpLqd/cSIwNQjtNWR0euPm6y0iqx3G4gOXaIDdtdDwZmhwe82LA6+zinmW4UBWVePQ==}
     engines: {node: '>=16.17.0'}
-
-  husky@8.0.3:
-    resolution: {integrity: sha512-+dQSyqPh4x1hlO1swXBiNb2HzTDN1I2IGLQx1GrBuiqFJfoMrnZWwVmatvSiO+Iz8fBUnf+lekwNo4c2LlXItg==}
-    engines: {node: '>=14'}
-    hasBin: true
 
   iconv-lite@0.4.24:
     resolution: {integrity: sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA==}
@@ -11187,12 +11179,12 @@ snapshots:
       - supports-color
       - yup
 
-  '@tinacms/search@1.0.33(abstract-level@1.0.3)(react@17.0.2)(sucrase@3.34.0)(typescript@5.2.2)(yup@1.4.0)':
+  '@tinacms/search@1.0.33(abstract-level@1.0.4)(react@17.0.2)(sucrase@3.34.0)(typescript@5.2.2)(yup@1.4.0)':
     dependencies:
       '@tinacms/graphql': 1.5.6(react@17.0.2)(typescript@5.2.2)
       '@tinacms/schema-tools': 1.6.6(react@17.0.2)(yup@1.4.0)
       memory-level: 1.0.0
-      search-index: 4.0.0(abstract-level@1.0.3)
+      search-index: 4.0.0(abstract-level@1.0.4)
       sqlite-level: 1.2.0(sucrase@3.34.0)
       stopword: 3.1.1
     transitivePeerDependencies:
@@ -14814,6 +14806,16 @@ snapshots:
     transitivePeerDependencies:
       - abstract-level
 
+  fergies-inverted-index@12.0.0(abstract-level@1.0.4):
+    dependencies:
+      browser-level: 1.0.1
+      charwise: 3.0.1
+      level-read-stream: 1.1.0(abstract-level@1.0.4)
+      memory-level: 1.0.0
+      traverse: 0.6.7
+    transitivePeerDependencies:
+      - abstract-level
+
   fetch-ponyfill@7.1.0(encoding@0.1.13):
     dependencies:
       node-fetch: 2.6.13(encoding@0.1.13)
@@ -15303,8 +15305,6 @@ snapshots:
 
   human-signals@5.0.0: {}
 
-  husky@8.0.3: {}
-
   iconv-lite@0.4.24:
     dependencies:
       safer-buffer: 2.1.2
@@ -15731,6 +15731,12 @@ snapshots:
       readable-stream: 3.6.2
     optionalDependencies:
       abstract-level: 1.0.3
+
+  level-read-stream@1.1.0(abstract-level@1.0.4):
+    dependencies:
+      readable-stream: 3.6.2
+    optionalDependencies:
+      abstract-level: 1.0.4
 
   level-supports@2.1.0: {}
 
@@ -18123,6 +18129,20 @@ snapshots:
     transitivePeerDependencies:
       - abstract-level
 
+  search-index@4.0.0(abstract-level@1.0.4):
+    dependencies:
+      browser-level: 1.0.1
+      charwise: 3.0.1
+      fergies-inverted-index: 12.0.0(abstract-level@1.0.4)
+      level-read-stream: 1.1.0(abstract-level@1.0.4)
+      lru-cache: 10.0.0
+      memory-level: 1.0.0
+      ngraminator: 3.0.2
+      p-queue: 7.3.4
+      term-vector: 1.0.0
+    transitivePeerDependencies:
+      - abstract-level
+
   section-matter@1.0.0:
     dependencies:
       extend-shallow: 2.0.1
@@ -18670,7 +18690,7 @@ snapshots:
       - react-native
       - supports-color
 
-  tinacms@2.3.0(@types/react@18.2.31)(abstract-level@1.0.3)(encoding@0.1.13)(immer@10.1.1)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(scheduler@0.19.0)(sucrase@3.34.0)(typescript@5.2.2):
+  tinacms@2.3.0(@types/react@18.2.31)(abstract-level@1.0.4)(encoding@0.1.13)(immer@10.1.1)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(scheduler@0.19.0)(sucrase@3.34.0)(typescript@5.2.2):
     dependencies:
       '@ariakit/react': 0.4.13(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
       '@floating-ui/dom': 1.6.11
@@ -18690,7 +18710,7 @@ snapshots:
       '@react-hook/window-size': 3.1.1(react@17.0.2)
       '@tinacms/mdx': 1.5.0(react@17.0.2)(typescript@5.2.2)(yup@1.4.0)
       '@tinacms/schema-tools': 1.6.6(react@17.0.2)(yup@1.4.0)
-      '@tinacms/search': 1.0.33(abstract-level@1.0.3)(react@17.0.2)(sucrase@3.34.0)(typescript@5.2.2)(yup@1.4.0)
+      '@tinacms/search': 1.0.33(abstract-level@1.0.4)(react@17.0.2)(sucrase@3.34.0)(typescript@5.2.2)(yup@1.4.0)
       '@udecode/cn': 33.0.0(@types/react@18.2.31)(class-variance-authority@0.7.0)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(tailwind-merge@2.5.4)
       '@udecode/plate': 36.5.9(@types/react@18.2.31)(immer@10.1.1)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(scheduler@0.19.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.107.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(slate@0.103.0))(slate@0.103.0)
       '@udecode/plate-autoformat': 36.5.6(@udecode/plate-common@36.5.9(@types/react@18.2.31)(immer@10.1.1)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(scheduler@0.19.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.107.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(slate@0.103.0))(slate@0.103.0))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.107.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(slate@0.103.0))(slate@0.103.0)
