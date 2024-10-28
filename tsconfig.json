@@ -2,6 +2,8 @@
 	"extends": "astro/tsconfigs/strict",
 	"compilerOptions": {
 		"strictNullChecks": true,
+		"module": "ESNext", // Specify ESM module system
+		"moduleResolution": "node",
 		"baseUrl": ".",
 		"verbatimModuleSyntax": true,
 		"paths": {
