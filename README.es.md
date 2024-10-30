@@ -55,7 +55,7 @@
 1. Clona o haz un [fork](https://github.com/danielcgilibert/blog-template/fork) del repositorio:
 
 ```bash
-git@github.com:danielcgilibert/blog-template.git
+git@github.com:danialpreneur/personal-blog
 ```
 
 2. Instala las dependencias:
