@@ -4,6 +4,6 @@ export const CATEGORIES = [
 	'Docker',
 	'Kubernetes',
 	'Shell-Scripting',
-	'CI/CD'
+	'CI-CD'
 ] as const
 
