@@ -3,7 +3,7 @@ export const CATEGORIES = [
 	'Ansible',
 	'Docker',
 	'Kubernetes',
-	'Shell-Scripting',
-	'CI-CD'
+	'Scripting',
+	'CICD'
 ] as const
 
