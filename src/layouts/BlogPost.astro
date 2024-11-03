@@ -11,11 +11,6 @@ type Props = {
 	data: CollectionEntry<'blog'>['data']
 	headings: MarkdownHeading[]
 	readTime: string
-	tags?: string[]
-}
-
-interface Tag  {
-	name: string;
 }
 
 const { data, readTime, headings, id } = Astro.props
@@ -47,11 +42,11 @@ const articleDate = pubDate.toISOString()
 			</div>
 
 			<div class='flex flex-wrap justify-center items-center gap-2 gap-y-4 md:gap-5'>
-				{tags.map((tag: Tag) => <Tag tag={tag.name} />)}
+				{tags.map((tag) => <Tag tag={tag} />)}
 			</div>
 		</header>
 
-		
+	
 			{
 				heroImage && (
 					<Image
