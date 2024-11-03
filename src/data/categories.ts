@@ -4,6 +4,7 @@ export const CATEGORIES = [
 	'Docker',
 	'Kubernetes',
 	'Scripting',
-	'CICD'
+	'CICD',
+	'Leetcode'
 ] as const
 
